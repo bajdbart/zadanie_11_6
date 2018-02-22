@@ -23,11 +23,11 @@ $(function() {
       var $columnDelete = $('<button>').addClass('btn-delete').text('x');
       var $columnAddCard = $('<button>').addClass('add-card').text('Add a card');
         // ADDING EVENTS
-      $columnDelete.click(function () {
+      $columnDelete.on('click', function() {
         self.removeColumn();
       });
       //Add a note after clicking on the button:
-      $columnAddCard.click(function() {
+      $columnAddCard.on('click', function() {
         self.addCard(new Card(prompt("Enter the name of the card")));
       });
       // CONSTRUCTION COLUMN ELEMENT
@@ -62,7 +62,7 @@ $(function() {
       var $cardDescription = $('<p>').addClass('card-description').text(self.description);
       var $cardDelete = $('<button>').addClass('btn-delete').text('x');
       // ADDING EVENTS
-      $cardDelete.click(function(){
+      $cardDelete.on('click', function() {
         self.removeCard();
       });
       // CONSTRUCTION CARD ELEMENT
@@ -97,7 +97,7 @@ $(function() {
   }
 
   $('.create-column')
-  .click(function(){
+  .on('click', function() {
 	var name = prompt('Enter a column name');
 	var column = new Column(name);
     	board.addColumn(column);
