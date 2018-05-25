@@ -1,0 +1,63 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right bottom, aqua, #fff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin-left: 20px;
+    margin-right: 30vw;
+}
+
+ul {
+    min-height: 22vh;
+}
+
+li {
+	list-style: none;
+	width: 100%;
+	min-height: 5vh;
+	background: rgba(255, 68, 0, 0.658);
+	background-size: cover;
+	margin: 10px 0;
+	cursor: move;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.create-column {
+	width: 150px;
+	height: 50px;
+	font-size: 20px;
+	background: lightsalmon;
+	margin-bottom : 20px;
+}
+
+.add-card {
+	height: 25px;
+	padding: 0 10px;
+    background: indianred;
+    color: indigo
+}
+
+.btn-delete {
+	max-width: 120px;
+	height: 25px;
+	background: indianred;
+	padding: 0 10px;
+}
+
+li .btn-delete {
+    background: lightpink;
+	width: 25px;
+    height: 25px;
+    margin-bottom: 5px
+}
